@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon</title>
+    <link rel="stylesheet" href="AmazonClone.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+        rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+</head>
+
+<body style="background-color: #e2e7e6;">
+    <!-- Start of Header Section -->
+    <header>
+        <!-- Start of Navbar 1 -->
+        <div class="navbar1">
+            <!-- Navbar Logo -->    
+            <div class="navlogo border1">
+                <div class="logo">
+                </div>
+            </div>
+            <!-- Nav-Delivery -->
+            <div class="nav-loco border1">
+                <p class="p1">Deliver To </p>
+                <div class="nav-loco-icon">
+                    <i class="bi bi-geo-alt"></i>
+                    <p class="p2">India</p>
+                </div>
+            </div>
+            <!-- Search Bar  -->
+            <div class="nav-search">
+                <select class="nav-select">
+                    <option>All</option>
+                    <option>you</option>
+                </select>
+                <input class="search-bar" placeholder="Search Amazon.in">
+                <div class="search-icon">
+                    <i class="bi bi-search"></i>
+                </div>
+
+            </div>
+            <!-- country selector -->
+            <div class="nav-country border1">
+                <div style="border: none;" class="btn-group border1">
+                    <button type="button" style="padding-right: 3px;" class="btn "><span class="flag-icon"
+                            style="color: white;"><img class="flag" src="image/india-flag.jpg" alt="">EN</span></button>
+                    <button style="color: white ; padding-left: 0;padding-right: 0; border: none; " type="button"
+                        class="btn dropdown-toggle dropdown-toggle-split " data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                    </button>
+                    <div class="dropdown-menu">
+
+                        <a class="dropdown-item" href="#"> <input type="radio" style="margin-right:5px;"><label for="">
+                                English - EN</label></a>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <a class="dropdown-item" href="#"> <input type="radio" style="margin-right:5px;"><label
+                                style="font-size: 0.8rem;" for="">
+                                हिन्दी - HI</label></a>
+                        <a class="dropdown-item" href="#"> <input type="radio" style="margin-right:5px;"><label
+                                style="font-size: 0.8rem;" for="">मराठी - MR</label></a>
+                        <a class="dropdown-item" href="#"> <input type="radio" style="margin-right:5px;"><label
+                                style="font-size: 0.8rem;" for="">தமிழ் - TA </label></a>
+                        <a class="dropdown-item" href="#"> <input type="radio" style="margin-right:5px;"><label
+                                style="font-size: 0.8rem;" for="">বাংলা - BN</label></a>
+
+                    </div>
+                </div>
+
+
+
+            </div>
+            <!-- Sign in option -->
+            <div class="nav-signIn border1">
+                <p style="margin-bottom: 0;"><span
+                        style="color: white; font-size: 0.8rem; font-family: Arial, Helvetica, sans-serif;">Hello,Sign
+                        In </span></p>
+                <div style="border: none;" class="btn-group border1">
+                    <p
+                        style="color: white;margin-bottom: 0;font-family: Arial, Helvetica, sans-serif; font-weight: 700;font-size: 0.9rem;">
+                        Account & Lists</p>
+                    <button
+                        style="color: white ; padding-left: 0;padding-right: 0; border: none; margin-left: 5px; padding-top: 0; "
+                        type="button" class="btn dropdown-toggle dropdown-toggle-split " data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                    </button>
+                    <div style="width: 400px;height: 400px;" class="dropdown-menu">
+                        <div class="drop-sign">
+                            <p>
+                                <button type="button" style="padding-right: 50px;padding-left: 50px;"
+                                    class="btn btn-warning">Sign In </button>
+                            </p>
+                            <span style="font-size: 0.8rem;"> New customer? Start here. </span>
+                        </div>
+                        <div class="drop-list">
+
+                            <div>
+                                <p style="font-size: 1.2rem;font-weight: bold; margin-top: 15px;">Your Lists</p>
+                                <hr>
+                                <li> Create a Wish List </li>
+                                <li> Wish from Any Website</li>
+                                <li> Baby Wishlist</li>
+                                <li> Discover Your Style</li>
+                                <li> Explore Showroom</li>
+
+                            </div>
+                            <div>
+                                <p style="font-size: 1.2rem;font-weight: bold; margin-top: 15px;">Your Account</p>
+                                <hr>
+                                <li> Your Account</li>
+                                <li> Your Orders</li>
+                                <li> Your Wish List</li>
+                                <li> Your Recommendations</li>
+                                <li> Your Prime Membership</li>
+                                <li> Your Prime Video</li>
+                                <li> Your Subscribe & Save Items</li>
+                                <li> Memberships & Subscriptions</li>
+                                <li> Your Seller Account</li>
+                                <li> Manage Your Content and Devices</li>
+                                <li> Your Free Amazon Business Account</li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- returns  -->
+            <div class="nav-return border1 ">
+                <p style="color: white;margin-bottom: 0;"><span>Returns</span></p>
+                <p style="color: white;">& Orders</p>
+            </div>
+            <!-- cart -->
+            <div class="nav-cart border1">
+                <i style="font-size: 2rem;" class="bi bi-cart2"></i>
+                Cart
+            </div>
+
+        </div>
+        </div>
+        <!-- End of Navbar 1 -->
+
+        <!-- Start Of Navbar 2 -->
+        <div class="navbar2">
+
+            <!-- Navbar 2 Scroll All -->
+            <div class=" nav2scroll  border1">
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+                    <p
+                        style="color: black; font-family: monospace;font-size: 1.5rem;font-weight: 700; align-items: center;margin-left: 30px;">
+                        Trending</p>
+                    <a href="#">Best Sellers</a>
+                    <a href="#">New Releases</a>
+                    <a href="#">Movers and Shakers</a>
+                    <hr>
+                    <p
+                        style="color: black; font-family: monospace;font-size: 1.2rem;font-weight: 700; align-items: center;margin-left: 30px;">
+                        Digital Content And Devices</p>
+
+                    <a href="#"> Echo & Alexa </a>
+                    <a href="#">Fire TV</a>
+                    <a href="#"> Kindle E-Readers & eBooks</a>
+                    <a href="#">Audible Audiobooks</a>
+                    <a href="#">Amazon Prime Video</a>
+                    <a href="#"> Amazon Prime Music</a>
+                    <hr>
+                    <p
+                        style="color: black; font-family: monospace;font-size: 1.2rem;font-weight: 700; align-items: center;margin-left: 30px;">
+                        Programs & Features</p>
+                    <a href="#"> Gift Cards & Mobile Recharges</a>
+                    <a href="#">Amazon Launchpad</a>
+                    <a href="#">Flight Tickets</a>
+                    <a href="#"> Clearance store</a>
+
+
+                </div>
+
+                <div id="main">
+                    <span style="  color: white;font-size:1.5rem;cursor:pointer" onclick="openNav()">&#9776; <span
+                            style="font-size: 1rem;font-family:Verdana, Geneva, Tahoma, sans-serif;font-weight: 700;color: white;">All</span>
+                    </span>
+
+                </div>
+            </div>
+            <!-- Amazon Mini Box  -->
+            <div class="border1">
+                <a style="text-decoration: none;" href="https://www.amazon.in/minitv?ref_=nav_avod_desktop_topnav">
+                    <p
+                        style="color: #fff;font-size: 14px;font-weight: 700;font-family:Arial, Helvetica, sans-serif;margin-top: 10px;">
+                        Amazon
+                        miniTV</p>
+                </a>
+
+            </div>
+            <!-- sell Box  -->
+            <div class="border1">
+                <a style="text-decoration: none;"
+                    href="https://www.amazon.in/b/32702023031?node=32702023031&ld=AZINSOANavDesktop_T3&ref_=nav_cs_sell_T3">
+                    <p
+                        style="color: #fff;font-size: 14px;font-weight: 700;font-family:Arial, Helvetica, sans-serif;margin-top: 10px;">
+                        Sell</p>
+                </a>
+
+            </div>
+            <!-- Best Sellers Box  -->
+            <div class="border1">
+                <a style="text-decoration: none;" href="https://www.amazon.in/gp/bestsellers/?ref_=nav_cs_bestsellers">
+                    <p
+                        style="color: #fff;font-size: 14px;font-weight: 700;font-family:Arial, Helvetica, sans-serif;margin-top: 10px;">
+                        Best
+                        Sellers</p>
+                </a>
+
+            </div>
+            <!--  Today's Deals Box  -->
+            <div class="border1">
+                <a style="text-decoration: none;" href="https://www.amazon.in/deals?ref_=nav_cs_gb">
+                    <p
+                        style="color: #fff;font-size: 14px;font-weight: 700;font-family:Arial, Helvetica, sans-serif;margin-top: 10px;">
+                        Today's
+                        Deals</p>
+                </a>
+
+            </div>
+            <!-- Mobiles Box -->
+            <div class="border1">
+                <a style="text-decoration: none;"
+                    href="https://www.amazon.in/mobile-phones/b/?ie=UTF8&node=1389401031&ref_=nav_cs_mobiles">
+                    <p
+                        style="color: #fff;font-size: 14px;font-weight: 700;font-family:Arial, Helvetica, sans-serif;margin-top: 10px;">
+                        Mobiles</p>
+                </a>
+
+            </div>
+            <!-- New Realeases Box -->
+            <div class="border1">
+                <a style="text-decoration: none;" href="https://www.amazon.in/gp/new-releases/?ref_=nav_cs_newreleases">
+                    <p
+                        style="color: #fff;font-size: 14px;font-weight: 700;font-family:Arial, Helvetica, sans-serif;margin-top: 10px;">
+                        New
+                        Releases</p>
+                </a>
+
+            </div>
+            <!-- Prime  Box -->
+
+            <div style="border-radius: 0;" class="btn-group border1">
+                <p
+                    style="color: white;margin-bottom: 0;font-family: Arial, Helvetica, sans-serif; font-weight: 700;font-size: 0.9rem; margin-top: 10px;">
+                    Prime</p>
+                <button
+                    style="color: white ; padding-left: 0;padding-right: 0; border: none; margin-left: 5px; padding-top: 0;margin-top: 10px; "
+                    type="button" class="btn dropdown-toggle dropdown-toggle-split " data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                </button>
+                <div style="padding: 10px;" class="dropdown-menu">
+
+                    <img height="300" width="300" src="image/prime.jpg" alt="">
+                </div>
+            </div>
+            <!-- Customer service Box -->
+            <div class="border1">
+                <a style="text-decoration: none;"
+                    href="https://www.amazon.in/gp/help/customer/display.html?nodeId=200507590&ref_=nav_cs_help">
+                    <p
+                        style="color: #fff;font-size: 14px;font-weight: 700;font-family:Arial, Helvetica, sans-serif;margin-top: 10px;">
+                        Customer
+                        Service</p>
+                </a>
+
+            </div>
+            <!-- Electronics Box -->
+            <div class="border1">
+                <a style="text-decoration: none;"
+                    href="https://www.amazon.in/electronics/b/?ie=UTF8&node=976419031&ref_=nav_cs_electronics">
+                    <p
+                        style="color: #fff;font-size: 14px;font-weight: 700;font-family:Arial, Helvetica, sans-serif;margin-top: 10px;">
+                        Electronics</p>
+                </a>
+
+            </div>
+            <!-- Gift Ideas Box -->
+            <div class="border1">
+                <a style="text-decoration: none;"
+                    href="https://www.amazon.in/gcx/Gifts-for-Everyone/gfhz/?ref_=nav_cs_giftfinder">
+                    <p
+                        style="color: #fff;font-size: 14px;font-weight: 700;font-family:Arial, Helvetica, sans-serif;margin-top: 10px;">
+                        Gift Ideas
+                    </p>
+                </a>
+
+            </div>
+            <!-- Home & Kitchen Box -->
+            <div class="border1">
+                <a style="text-decoration: none;"
+                    href="https://www.amazon.in/Home-Kitchen/b/?ie=UTF8&node=976442031&ref_=nav_cs_home">
+                    <p
+                        style="color: #fff;font-size: 14px;font-weight: 700;font-family:Arial, Helvetica, sans-serif;margin-top: 10px;">
+                        Home &
+                        Kitchen</p>
+                </a>
+
+            </div>
+
+            <!-- Advertisment Box -->
+            <div class="ads border1">
+                <a
+                    href="https://www.amazon.in/b/?_encoding=UTF8&node=6967393031&ref_=nav_swm_IN_swm_appdownload&pf_rd_p=1c686ef5-39e5-41d1-82cb-c93c08a15fee&pf_rd_s=nav-sitewide-msg&pf_rd_t=4201&pf_rd_i=navbar-4201&pf_rd_m=A21TJRUUN4KGV&pf_rd_r=QWJXT1RBEZS28BN1E8ZJ"><img
+                        height="30px" style src="image/advertamazon.jpg" alt=""></a>
+            </div>
+        </div>
+        <!-- End of Navbar 2 -->
+    </header>
+    <!-- End of Header Section -->
+
+    <!-- Start Of Hero Section -->
+
+    <div class="Hero-section">
+
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner ">
+                <div class="carousel-item active carousel-img1">
+                    <div class="carousel-caption d-none d-md-block para">
+                        <p class="para-sub">You are on amazon.com. You can also shop on Amazon India for millions of
+                            products with fast local delivery. Click here to go to amazon.in</p>
+                    </div>
+
+                </div>
+                <div class="carousel-item carousel-img2">
+                    <div class="carousel-caption d-none d-md-block para">
+                        <p class="para-sub">You are on amazon.com. You can also shop on Amazon India for millions of
+                            products with fast local delivery. Click here to go to amazon.in</p>
+                    </div>
+
+                </div>
+                <div class="carousel-item carousel-img3">
+                    <div class="carousel-caption d-none d-md-block para">
+                        <p class="para-sub">You are on amazon.com. You can also shop on Amazon India for millions of
+                            products with fast local delivery. Click here to go to amazon.in</p>
+                    </div>
+
+                </div>
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="prev">
+                <span style="margin-bottom: 300px;height: 4rem;width: 4rem;" class="carousel-control-prev-icon "
+                    aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="next">
+                <span style="margin-bottom: 300px;height: 4rem;width: 4rem;" class="carousel-control-next-icon"
+                    aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+
+
+
+        </div>
+
+
+    </div>
+    <!-- End Of Hero Section -->
+
+    <!-- Start Of Shop-Section 1 -->
+
+    <div class="shop-section">
+
+        <div style="padding-left: none;" class="box box1">
+            <span>Shop & Pay | Earn rewards daily</span>
+            <div class="innerbox">
+                <a
+                    href="https://www.amazon.in/b/ref=apay_gw_btf_rewards_QC_PC?node=22962996031&pf_rd_r=E4DZQ1BAS6J1043SRB4M&pf_rd_p=db573d8f-0397-42ab-996e-ba73314fcc07&pd_rd_r=8e8f25c7-04cc-40f8-9abb-482720ef89c2&pd_rd_w=AR5CO&pd_rd_wg=pLFzZ&ref_=pd_gw_unk"><img
+                        class="innerimg" src="image/card1.png" alt=""></a>
+                <a
+                    href="https://www.amazon.in/h/your-offers/?widgetParameters={%22includeExpiredCoupons%22:true,%22sorts%22:[{%22direction%22:%22desc%22,%22key%22:%22ClippedTimestamp%22,%22order%22:1}],%22resultSize%22:800,%22layoutType%22:1,%22title%22:%22RedeemYourOfferBeforeExpireCollectPage%22,%22language%22:%22en_IN%22,%22topDynamicSlotStringForViewAllPage%22:%22collected-offers-counter-top-slots%22,%22bottomDynamicSlotStringForViewAllPage%22:%22collected-offers-counter-bottom-slots%22}&ref=coupon_widget_viewmore%22,&pf_rd_r=E4DZQ1BAS6J1043SRB4M&pf_rd_p=db573d8f-0397-42ab-996e-ba73314fcc07&pd_rd_r=8e8f25c7-04cc-40f8-9abb-482720ef89c2&pd_rd_w=AR5CO&pd_rd_wg=pLFzZ&ref_=pd_gw_unk"><img
+                        class="innerimg" src="image/card2.png" alt=""></a>
+            </div>
+            <div class="innerbox">
+                <a
+                    href="https://www.amazon.in/b/ref=apay_gw_btf_rewards_QC_PC?node=28165163031&pf_rd_r=E4DZQ1BAS6J1043SRB4M&pf_rd_p=db573d8f-0397-42ab-996e-ba73314fcc07&pd_rd_r=8e8f25c7-04cc-40f8-9abb-482720ef89c2&pd_rd_w=AR5CO&pd_rd_wg=pLFzZ&ref_=pd_gw_unk"><img
+                        class="innerimg" src="image/card3.png" alt=""></a>
+                <a
+                    href="https://www.amazon.in/b/ref=apay_gw_btf_rewards_QC_PC?node=61797277031&pf_rd_r=E4DZQ1BAS6J1043SRB4M&pf_rd_p=db573d8f-0397-42ab-996e-ba73314fcc07&pd_rd_r=8e8f25c7-04cc-40f8-9abb-482720ef89c2&pd_rd_w=AR5CO&pd_rd_wg=pLFzZ&ref_=pd_gw_unk"><img
+                        class="innerimg" src="image/card4.png" alt=""></a>
+            </div>
+
+
+        </div>
+        <div class="box box1">
+            <span>Up to 60% off | Cleaning supplies, power tools & more</span>
+            <div class="innerbox">
+                <a
+                    href="https://www.amazon.in/b/ref=pcCleaning?node=61028133031&pf_rd_r=E4DZQ1BAS6J1043SRB4M&pf_rd_p=b6c1f507-8eb6-4e09-aec1-f86ab25d1642&pd_rd_r=8e8f25c7-04cc-40f8-9abb-482720ef89c2&pd_rd_w=PueSw&pd_rd_wg=pLFzZ&ref_=pd_gw_unk"><img
+                        class="innerimg" src="image/card5.png" alt=""></a>
+
+                <a
+                    href="https://www.amazon.in/b/ref=pcHandtoolKits?node=86946357031&pf_rd_r=E4DZQ1BAS6J1043SRB4M&pf_rd_p=b6c1f507-8eb6-4e09-aec1-f86ab25d1642&pd_rd_r=8e8f25c7-04cc-40f8-9abb-482720ef89c2&pd_rd_w=PueSw&pd_rd_wg=pLFzZ&ref_=pd_gw_unk"><img
+                        class="innerimg" src="image/card6.png" alt=""></a>
+            </div>
+            <div class="innerbox">
+                <a
+                    href="https://www.amazon.in/b/ref=pcBathroomAccessories?node=60834830031&pf_rd_r=E4DZQ1BAS6J1043SRB4M&pf_rd_p=b6c1f507-8eb6-4e09-aec1-f86ab25d1642&pd_rd_r=8e8f25c7-04cc-40f8-9abb-482720ef89c2&pd_rd_w=PueSw&pd_rd_wg=pLFzZ&ref_=pd_gw_unk"><img
+                        class="innerimg" src="image/card7.png" alt=""></a>
+                <a
+                    href="https://www.amazon.in/b/ref=pcElectricals?node=87055338031&pf_rd_r=E4DZQ1BAS6J1043SRB4M&pf_rd_p=b6c1f507-8eb6-4e09-aec1-f86ab25d1642&pd_rd_r=8e8f25c7-04cc-40f8-9abb-482720ef89c2&pd_rd_w=PueSw&pd_rd_wg=pLFzZ&ref_=pd_gw_unk"><img
+                        class="innerimg" src="image/card8.png" alt=""></a>
+            </div>
+        </div>
+        <div class="box box1">
+            <span>Up to 70% off | Clearance store</span>
+            <a href="https://www.amazon.in/s?rh=n%3A20538600031&language=en_IN&brr=1&rd=1"><img
+                    style="height: 250px;width: 310px;" src="image/card9.png" alt=""></a>
+        </div>
+        <div class="box box4">
+            <div style="margin-top: 20px;" class="innerbox">
+                <span>Get 50% off on Selling Fee*</span>
+                <a
+                    href="https://www.amazon.in/b/?node=42253420031&ref=INSellerMarketing_ATF_imagery&ld=AZINSOA_ATF_imagery&pf_rd_r=E4DZQ1BAS6J1043SRB4M&pf_rd_p=00bd6007-3cbe-4276-8ef0-47a64069ee83&pd_rd_r=8e8f25c7-04cc-40f8-9abb-482720ef89c2&pd_rd_w=bgTZh&pd_rd_wg=pLFzZ&ref_=pd_gw_unk"><img
+                        src="image/card10.png" alt=""></a>
+
+            </div>
+            <div style="margin-top: 30px;align-items: center;justify-content: center;margin-left: 20px;">
+                <a href="https://www.amazon.in/Laptops/b?ie=UTF8&node=1375424031&ref_=sd_allcat_sbc_mobcomp_laptops"><img
+                        style="height: 165px;width: 270px;" src="image/card11.png" alt=""></a>
+            </div>
+        </div>
+
+
+    </div>
+    <!-- End Of Shop-Section 1 -->
+    <br>
+
+    <!-- Start of Shop-Section 2 -->
+    <div class="shop-section2">
+
+        <div class="box5 boxex">
+            <a
+                href="https://www.primevideo.com/region/eu/detail/amzn1.dv.gti.ae7b36fc-b3f4-4057-9f2d-935df578bf37?ref_=atv_sso_std"><img
+                    height="380px" width="100%" src="image/card12.png" alt=""></a>
+        </div>
+        <div class="box6 boxex box1">
+            <span>Up to 60% off | Styles for men</span><br>
+            <div class="innerbox">
+                <a
+                    href="https://www.amazon.in/b/ref=pcCleaning?node=61028133031&pf_rd_r=E4DZQ1BAS6J1043SRB4M&pf_rd_p=b6c1f507-8eb6-4e09-aec1-f86ab25d1642&pd_rd_r=8e8f25c7-04cc-40f8-9abb-482720ef89c2&pd_rd_w=PueSw&pd_rd_wg=pLFzZ&ref_=pd_gw_unk"><img
+                        class="innerimg" src="image/card13.png" alt=""></a>
+
+                <a
+                    href="https://www.amazon.in/b/ref=pcHandtoolKits?node=86946357031&pf_rd_r=E4DZQ1BAS6J1043SRB4M&pf_rd_p=b6c1f507-8eb6-4e09-aec1-f86ab25d1642&pd_rd_r=8e8f25c7-04cc-40f8-9abb-482720ef89c2&pd_rd_w=PueSw&pd_rd_wg=pLFzZ&ref_=pd_gw_unk"><img
+                        class="innerimg" src="image/card14.png" alt=""></a>
+            </div>
+            <div class="innerbox">
+                <a
+                    href="https://www.amazon.in/b/ref=pcBathroomAccessories?node=60834830031&pf_rd_r=E4DZQ1BAS6J1043SRB4M&pf_rd_p=b6c1f507-8eb6-4e09-aec1-f86ab25d1642&pd_rd_r=8e8f25c7-04cc-40f8-9abb-482720ef89c2&pd_rd_w=PueSw&pd_rd_wg=pLFzZ&ref_=pd_gw_unk"><img
+                        class="innerimg" src="image/card15.png" alt=""></a>
+                <a
+                    href="https://www.amazon.in/b/ref=pcElectricals?node=87055338031&pf_rd_r=E4DZQ1BAS6J1043SRB4M&pf_rd_p=b6c1f507-8eb6-4e09-aec1-f86ab25d1642&pd_rd_r=8e8f25c7-04cc-40f8-9abb-482720ef89c2&pd_rd_w=PueSw&pd_rd_wg=pLFzZ&ref_=pd_gw_unk"><img
+                        class="innerimg" src="image/card16.png" alt=""></a>
+            </div>
+
+        </div>
+        <div class="box7 boxex box1">
+            <span>Top mobile accessories for your smartphone</span>
+            <div class="innerbox">
+                <a
+                    href="https://www.amazon.in/b/ref=pcCleaning?node=61028133031&pf_rd_r=E4DZQ1BAS6J1043SRB4M&pf_rd_p=b6c1f507-8eb6-4e09-aec1-f86ab25d1642&pd_rd_r=8e8f25c7-04cc-40f8-9abb-482720ef89c2&pd_rd_w=PueSw&pd_rd_wg=pLFzZ&ref_=pd_gw_unk"><img
+                        class="innerimg" src="image/card17.png" alt=""></a>
+
+                <a
+                    href="https://www.amazon.in/b/ref=pcHandtoolKits?node=86946357031&pf_rd_r=E4DZQ1BAS6J1043SRB4M&pf_rd_p=b6c1f507-8eb6-4e09-aec1-f86ab25d1642&pd_rd_r=8e8f25c7-04cc-40f8-9abb-482720ef89c2&pd_rd_w=PueSw&pd_rd_wg=pLFzZ&ref_=pd_gw_unk"><img
+                        class="innerimg" src="image/card18.png" alt=""></a>
+            </div>
+            <div class="innerbox">
+                <a
+                    href="https://www.amazon.in/b/ref=pcBathroomAccessories?node=60834830031&pf_rd_r=E4DZQ1BAS6J1043SRB4M&pf_rd_p=b6c1f507-8eb6-4e09-aec1-f86ab25d1642&pd_rd_r=8e8f25c7-04cc-40f8-9abb-482720ef89c2&pd_rd_w=PueSw&pd_rd_wg=pLFzZ&ref_=pd_gw_unk"><img
+                        class="innerimg" src="image/card19.png" alt=""></a>
+                <a
+                    href="https://www.amazon.in/b/ref=pcElectricals?node=87055338031&pf_rd_r=E4DZQ1BAS6J1043SRB4M&pf_rd_p=b6c1f507-8eb6-4e09-aec1-f86ab25d1642&pd_rd_r=8e8f25c7-04cc-40f8-9abb-482720ef89c2&pd_rd_w=PueSw&pd_rd_wg=pLFzZ&ref_=pd_gw_unk"><img
+                        class="innerimg" src="image/card20.png" alt=""></a>
+            </div>
+        </div>
+
+    </div>
+    <!-- End Of Shop-Section 2 -->
+
+    <!-- Start Of Shop Section 3 -->
+
+
+    <div class="shop-section3">
+        <br>
+        <span
+            style="font-family: Arial, Helvetica, sans-serif;font-size: 1.5rem;font-weight: 700;margin-top: 20px;margin-block-start: 20px;">Up
+            to 60% off | Every room deserves to be unique</span>
+        <div class="shop-container">
+
+
+            <a href=""><img src="image/card21.png" alt=""></a>
+            <a href=""><img src="image/card22.png" alt=""></a>
+            <a href=""><img src="image/card23.png" alt=""></a>
+            <a href=""><img src="image/card24.png" alt=""></a>
+            <a href=""><img src="image/card25.png" alt=""></a>
+            <a href=""><img src="image/card26.png" alt=""></a>
+            <a href=""><img src="image/card27.png" alt=""></a>
+            <a href=""><img src="image/card28.png" alt=""></a>
+            <a href=""><img src="image/card29.png" alt=""></a>
+
+
+
+        </div>
+    </div>
+
+
+    <!-- End Of Shop-Section 3 -->
+
+    <!-- Poster Start -->
+    <div class="poster">
+        <img src="image/card30.png" alt="">
+    </div>
+    <!-- Poster End -->
+
+    <!-- Start of Shop-Section 4 -->
+
+    <div class="shop-section4">
+
+        <div class="shop-section">
+
+            <div style="padding-left: none; gap: 0;" class="box box1">
+                <span>Hip Hop India | Watch Now Only on miniTV</span>
+                <div class="box box1">
+
+                    <a
+                        href="https://www.amazon.in/minitv/tp/81d0759a-a156-4ee6-938f-26d94154d8e6?dplnk=Y&mtv_pt=gateway&refMarker=avod_in_desktop_all_na_gw_cc_btf_na_HHI_v2&pf_rd_r=208PEFB6F8SRHHHC5APT&pf_rd_p=0315d906-9204-4db8-afba-0197f21609bf&pd_rd_r=0880178b-5290-4918-8cc2-3c2775cea328&pd_rd_w=56Ra8&pd_rd_wg=yB9OF&ref_=pd_gw_unk"><img
+                            style="height: 250px;width: 270px;" src="image/card31.png" alt=""></a>
+                </div>
+
+
+
+            </div>
+            <div style="padding-left: none; gap: 0;" class="box box1">
+                <span>Baby diapers & wipes at great prices</span>
+                <div class="box box1">
+
+                    <a
+                        href="https://www.amazon.in/b?node=1571274031&pf_rd_r=208PEFB6F8SRHHHC5APT&pf_rd_p=a72d0850-5fe8-411f-b875-a12eb7c24504&pd_rd_r=0880178b-5290-4918-8cc2-3c2775cea328&pd_rd_w=ruZlW&pd_rd_wg=yB9OF&ref_=pd_gw_unk"><img
+                            style="height: 250px;width: 270px;" src="image/card32.png" alt=""></a>
+                </div>
+
+
+
+            </div>
+            <div class="box box1">
+                <span>Marvel's Wastelanders: Star-Lord, on Audible</span>
+                <a
+                    href="https://www.amazon.in/dp/B0C7LLGKBK?pf_rd_r=208PEFB6F8SRHHHC5APT&pf_rd_p=dbb86700-601f-4d2b-bc1b-e1e580dfe886&pd_rd_r=0880178b-5290-4918-8cc2-3c2775cea328&pd_rd_w=5WmgA&pd_rd_wg=yB9OF&ref_=pd_gw_unk"><img
+                        style="height: 250px;width: 310px;" src="image/card33.png" alt=""></a>
+            </div>
+            <div style="padding-left: none; gap: 0;" class="box box1">
+                <span>Up to 60% off | Start your fitness journey</span>
+                <div class="box box1">
+
+                    <a href="https://www.amazon.in/s?rh=n%3A20538600031&language=en_IN&brr=1&rd=1"><img
+                            style="height: 250px;width: 270px;" src="image/card34.png" alt=""></a>
+                </div>
+
+
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    <!-- End of Shop-Section4 -->
+
+
+    <!-- Start Of Shop-Section 5 -->
+
+    <div class="shop-section3">
+        <br>
+        <span
+            style="font-family: Arial, Helvetica, sans-serif;font-size: 1.5rem;font-weight: 700;margin-top: 20px;margin-block-start: 20px;">More
+            items to explore</span>
+        <div class="shop-container">
+
+
+            <a href=""><img src="image/card35.png" alt=""></a>
+            <a href=""><img src="image/card36.png" alt=""></a>
+            <a href=""><img src="image/card37.png" alt=""></a>
+            <a href=""><img src="image/card38.png" alt=""></a>
+            <a href=""><img src="image/card39.png" alt=""></a>
+            <a href=""><img src="image/card40.png" alt=""></a>
+            <a href=""><img src="image/card41.png" alt=""></a>
+            <a href=""><img src="image/card42.png" alt=""></a>
+            <a href=""><img src="image/card43.png" alt=""></a>
+            <a href=""><img src="image/card44.png" alt=""></a>
+            <a href=""><img src="image/card45.png" alt=""></a>
+            <a href=""><img src="image/card46.png" alt=""></a>
+
+
+
+        </div>
+    </div>
+
+    <!-- End Of Shop-Section 5 -->
+
+
+    <!-- Start Ending Section -->
+
+    <div class="ending">
+        <br>
+        <hr>
+        <br>
+        <span
+            style="font-family: Arial, Helvetica, sans-serif;font-size: 1.5rem;font-weight: 700;margin-top: 20px;margin-block-start: 20px;">Keep
+            Shopping On Amazon </span>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <hr>
+
+
+
+    </div>
+
+    <!-- End OF Ending Section -->
+
+
+    <!-- Start Of Footer -->
+
+
+    <footer>
+
+        <!-- Start Footer section 1 -->
+
+        <a style="text-decoration: none;align-items: center;justify-content: center;" href="AmazonClone.htm">
+            <div class="footer-section1">
+
+                <span>Back to top</span>
+
+            </div>
+        </a>
+
+        <!-- End of Footer section 1 -->
+
+        <!-- Start of Footer Section 2 -->
+
+        <div class="footer-Section2">
+
+            <div class="footer-row">
+                <div class="footerbox">
+                    <span style="margin-bottom: 20px;" class="footspan">Get to Know Us</span>
+                    <div class="footinner">
+                        <li class="footli"><a class="foota" href="">About Us</a> </li>
+                        <li class="footli"><a class="foota" href="">Careers</a></li>
+                        <li class="footli"><a class="foota" href="">Press Releases</a></li>
+                        <li class="footli"><a class="foota" href="">Amazon Science</a></li>
+                    </div>
+
+
+
+                </div>
+                <div class="footerbox">
+                    <span class="footspan">Connect with Us</span>
+                    <div class="footinner">
+                        <li class="footli"><a class="foota" href="">Facebook</a> </li>
+                        <li class="footli"><a class="foota" href=""> Twitter</a></li>
+                        <li class="footli"><a class="foota" href=""> Instagram</a></li>
+                    </div>
+
+
+                </div>
+                <div class="footerbox">
+                    <span class="footspan">Make Money with Us</span>
+                    <div class="footinner">
+                        <li class="footli"><a class="foota" href=""> Sell on Amazon </a> </li>
+                        <li class="footli"><a class="foota" href=""> Sell under Amazon Accelerator</a></li>
+                        <li class="footli"><a class="foota" href=""> Protect and Build Your Brand</a></li>
+                        <li class="footli"><a class="foota" href=""> Amazon Global Selling</a></li>
+                        <li class="footli"><a class="foota" href=""> Become an Affiliate</a></li>
+                        <li class="footli"><a class="foota" href=""> Fulfilment by Amazon</a></li>
+                        <li class="footli"><a class="foota" href=""> Advertise Your Products</a></li>
+                    </div>
+
+                </div>
+                <div class="footerbox">
+                    <span class="footspan">Let Us Help You</span>
+                    <div class="footinner">
+                        <li class="footli"><a class="foota" href="">COVID-19 and Amazon</a> </li>
+                        <li class="footli"><a class="foota" href="">Your Account</a></li>
+                        <li class="footli"><a class="foota" href=""> Returns Centre</a></li>
+                        <li class="footli"><a class="foota" href=""> 100% Purchase Protection</a></li>
+                        <li class="footli"><a class="foota" href=""> Amazon App Download</a></li>
+                        <li class="footli"><a class="foota" href=""> Help</a></li>
+                    </div>
+
+                </div>
+
+            </div>
+            <br><br><br><br><br>
+            <hr>
+
+            <div class="footersub2">
+                <div class="footerlogo">
+                    <a href=""><img style="padding-top: 10px;" height="70px" src="image/amazon_logo.jpg" alt=""></a>
+                </div>
+
+                <div class="dropdown">
+                    <button class="btn btn-outline-secondary dropdown-toggle footbutton" type="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="bi bi-globe2"></i><span style="margin-left: 10px;color: #DDD;">English
+                        </span></button>
+                    <ul style="font-size: 0.9rem;height: 250px;width: 200px;" class="dropdown-menu">
+                        <li><a style="margin-left: 10px;" class="dropdown-item" href="#"><input type="radio"> <label
+                                    style="margin-left: 10px;" for=""> English - EN</label> </a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a style="margin-left: 10px;" class="dropdown-item" href="#"><input type="radio"> <label
+                                    style="margin-left: 10px;" for=""> हिन्दी - HI</label> </a></li>
+                        <li><a style="margin-left: 10px;" class="dropdown-item" href="#"><input type="radio"> <label
+                                    style="margin-left: 10px;" for="">தமிழ் - TA</label> </a></li>
+                        <li><a style="margin-left: 10px;" class="dropdown-item" href="#"><input type="radio"> <label
+                                    style="margin-left: 10px;" for=""> తెలుగు - TE</label> </a></li>
+                        <li><a style="margin-left: 10px;" class="dropdown-item" href="#"><input type="radio"> <label
+                                    style="margin-left: 10px;" for=""> मराठी - MR</label> </a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                            <span style="margin-left: 10px;">you're shopping on Amazon.in</span>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footercountry">
+                <div>
+                    <a class="countrya" href=""><span
+                            style="font-family: Arial, Helvetica, sans-serif;">Australia</span></a>
+                </div>
+                <div>
+                    <a class="countrya" href=""><span
+                            style="font-family: Arial, Helvetica, sans-serif;">Brazil</span></a>
+                </div>
+                <div>
+                    <a class="countrya" href=""><span style="font-family: Arial, Helvetica, sans-serif;">
+                            Canada</span></a>
+                </div>
+                <div>
+                    <a class="countrya" href=""><span
+                            style="font-family: Arial, Helvetica, sans-serif;">France</span></a>
+                </div>
+                <div>
+                    <a class="countrya" href=""><span
+                            style="font-family: Arial, Helvetica, sans-serif;">Germany</span></a>
+                </div>
+                <div>
+                    <a class="countrya" href=""><span
+                            style="font-family: Arial, Helvetica, sans-serif;">Italy</span></a>
+                </div>
+                <div>
+                    <a class="countrya" href=""><span
+                            style="font-family: Arial, Helvetica, sans-serif;">Japan</span></a>
+                </div>
+                <div>
+                    <a class="countrya" href=""><span
+                            style="font-family: Arial, Helvetica, sans-serif;">Mexico</span></a>
+                </div>
+                <div>
+                    <a class="countrya" href=""><span
+                            style="font-family: Arial, Helvetica, sans-serif;">Netherlands</span></a>
+                </div>
+                <div>
+                    <a class="countrya" href=""><span
+                            style="font-family: Arial, Helvetica, sans-serif;">Poland</span></a>
+                </div>
+                <div>
+                    <a class="countrya" href=""><span
+                            style="font-family: Arial, Helvetica, sans-serif;">Singapore</span></a>
+                </div>
+                <div>
+                    <a class="countrya" href=""><span
+                            style="font-family: Arial, Helvetica, sans-serif;">Spain</span></a>
+                </div>
+                <div>
+                    <a class="countrya" href=""><span style="font-family: Arial, Helvetica, sans-serif;">United Arab
+                            Emirates</span></a>
+                </div>
+                <div>
+                    <a class="countrya" href=""><span style="font-family: Arial, Helvetica, sans-serif;">United
+                            Kingdom</span></a>
+                </div>
+
+                <div>
+                    <a class="countrya" href=""><span style="font-family: Arial, Helvetica, sans-serif;"> United
+                            States</span></a>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- End of footer section 2 -->
+
+        <!-- Start Of Footer section 3 -->
+
+
+        <div class="footer-section3">
+
+            <div class="footersub31">
+                <div class="footer3box1">
+                    <a style="text-decoration: none;" href=""><span
+                            style="font-family: Arial, Helvetica, sans-serif;color: #DDD;">AbeBooks</span></a>
+                    <li class="footer3li"><a class="footer3a" href="">Books, art <br>& collectibles</a></li>
+                </div>
+                <div class="footer3box1">
+                    <a style="text-decoration: none;" href=""><span
+                            style="font-family: Arial, Helvetica, sans-serif;color: #DDD;">Amazon Web
+                            Services</span></a>
+                    <li class="footer3li"><a class="footer3a" href="">Scalable Cloud<br>Computing Services</a></li>
+
+                </div>
+                <div class="footer3box1">
+                    <a style="text-decoration: none;" href=""><span
+                            style="font-family: Arial, Helvetica, sans-serif;color: #DDD;">Audible</span></a>
+                    <li class="footer3li"><a class="footer3a" href="">Download <br>Audio Books</a></li>
+
+                </div>
+                <div class="footer3box1">
+                    <a style="text-decoration: none;" href=""><span
+                            style="font-family: Arial, Helvetica, sans-serif;color: #DDD;">DPReview </span></a>
+                    <li class="footer3li"><a class="footer3a" href="">Digital <br> Photography</a></li>
+
+                </div>
+                <div class="footer3box1">
+                    <a style="text-decoration: none;" href=""><span
+                            style="font-family: Arial, Helvetica, sans-serif;color: #DDD;">IMDb</span></a>
+                    <li class="footer3li"><a class="footer3a" href="">Movies, TV <br>& Celebrities</a></li>
+
+                </div>
+            </div>
+
+            <div class="footersub32">
+
+                <div class="footer3box2">
+                    <a style="text-decoration: none;" href=""><span
+                            style="font-family: Arial, Helvetica, sans-serif;color: #DDD;">Shopbop</span></a>
+                    <li class="footer3li"><a class="footer3a" href="">Designer<br>Fashion Brands</a></li>
+                </div>
+                <div class="footer3box2">
+                    <a style="text-decoration: none;" href=""><span
+                            style="font-family: Arial, Helvetica, sans-serif;color: #DDD;">Amazon Business</span></a>
+                    <li class="footer3li"><a class="footer3a" href="">Everything For<br>Your Business</a></li>
+
+                </div>
+                <div class="footer3box2">
+                    <a style="text-decoration: none;" href=""><span
+                            style="font-family: Arial, Helvetica, sans-serif;color: #DDD;">Prime Now</span></a>
+                    <li class="footer3li"><a class="footer3a" href="">2-Hour Delivery<br>on Everyday Items</a></li>
+
+                </div>
+                <div class="footer3box2">
+                    <a style="text-decoration: none;" href=""><span
+                            style="font-family: Arial, Helvetica, sans-serif;color: #DDD;">Amazon Prime Music</span></a>
+                    <li class="footer3li"><a class="footer3a" href="">100 million songs, ad-free<br> Over 15 million
+                            podcast episodes</a></li>
+
+                </div>
+
+            </div>
+
+            <div class="bottomfooter">
+
+                <div style="width: auto;" class="bottombox">
+                    <a style="text-decoration: none;" href=""><span
+                            style="font-family: Arial, Helvetica, sans-serif;color: #DDD;font-size: 0.8rem;">Conditions
+                            of Use & Sale</span></a>
+                </div>
+                <div style="width: 90px;" class="bottombox">
+                    <a style="text-decoration: none;" href=""><span
+                            style="font-family: Arial, Helvetica, sans-serif;color: #DDD;font-size: 0.8rem;">Privacy
+                            Notice </span></a>
+                </div>
+                <div class="bottombox">
+                    <a style="text-decoration: none;" href=""><span
+                            style="font-family: Arial, Helvetica, sans-serif;color: #DDD;font-size: 0.8rem;">
+                            Interest-Based Ads</span></a>
+                </div>
+
+            </div>
+
+            <div class="footertag">
+                <div class="subfootertag">
+                    <span style="font-family: Arial, Helvetica, sans-serif;color: #DDD;font-size: 0.8rem;"> © 1996-2023,
+                        Amazon.com, Inc. or its affiliates</span>
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+        <!-- End Of Footer Section 3 -->
+
+
+    </footer>
+
+    <!-- End OF Footer -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="AmazonClone.js"></script>
+</body>
+
+</html>
+
+                                <!-- End OF Amazon Clone Site 🥳 -->
